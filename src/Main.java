@@ -8,13 +8,13 @@ public class Main {
         double average=0;
         System.out.println("Please enter the name of student : ");
         String name= input.nextLine();
-        System.out.println("Please enter how many grades you want add : ");
+        System.out.println("Please enter how many subjects you want to add : ");
         int column= input.nextInt();
     double[][] array= new double [1][column];
     for (int i=0; i<array.length; i++){
         for (int j = 0; j < array[i].length; j++) {
             int c=j+1;
-            System.out.println("Please enter student "+name+" grades of column "+c+" :");
+            System.out.println("Please enter student "+name+" grades of subject "+c+" :");
            array[0][j]=input.nextDouble();
            sum+=array[0][j];
         }
@@ -22,7 +22,7 @@ public class Main {
     }
         average=sum/column;
         System.out.println("The sum for all grades is : "+sum);
-        System.out.println("And the average of "+name+" is : "+average);
+        System.out.println("And the average of "+name+" is : "+average+"%");
     }
 
 
@@ -36,6 +36,5 @@ public class Main {
         }
 
     }
-
 
 }
